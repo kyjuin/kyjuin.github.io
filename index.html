@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    try {
+      if (localStorage.getItem('portfolio-theme') === 'light') {
+        document.documentElement.dataset.theme = 'light';
+      }
+    } catch (_) { /* Keep the default dark theme when storage is unavailable. */ }
+  </script>
+  <title>Personal Website &amp; Developer Portfolio</title>
+  <meta name="description" content="A personal space for my development work, background, and interests. Explore my currency exchange, POS system, online mall, and master's app projects." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="tech-bg" aria-hidden="true">
+    <span class="orb orb-one"></span><span class="orb orb-two"></span><span class="orb orb-three"></span><span class="grid-glow"></span>
+  </div>
+  <div class="page-shell">
+    <div class="portfolio-frame">
+      <header class="frame-header">
+        <a class="frame-brand" href="#home" aria-label="Home">
+          <span class="frame-mark" aria-hidden="true">Y</span>
+          <span class="brand-copy"><strong>Your name</strong><span>Personal / Portfolio</span></span>
+        </a>
+        <nav class="frame-nav" aria-label="Primary">
+          <a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+            <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+            <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13a9 9 0 0 1-10-10 9 9 0 1 0 10 10Z"/></svg>
+            <span class="theme-label">Light</span>
+          </button>
+        </nav>
+        <a class="header-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main id="main-content">
+        <section id="home" class="hero-row" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> A personal space on the web</p>
+            <h1 id="hero-title">Full-stack<br /><span>developer.</span></h1>
+            <p class="hero-text">I care about clean code and clear experiences. This is where I share what I build, what I learn, and a little about myself.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+              <a class="button button-secondary" href="#skills">View my skills <span aria-hidden="true">↓</span></a>
+            </div>
+            <p class="hero-note">Development · Personal projects · Research</p>
+          </div>
+          <aside class="hero-feature" aria-label="Portfolio preview">
+            <div class="feature-art" aria-hidden="true"><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span><span class="art-core"></span><span class="art-cross cross-one">+</span><span class="art-cross cross-two">+</span><span class="art-caption">IDEA → BUILD → REFINE</span></div>
+            <div class="feature-caption"><div><p class="eyebrow">Inside the portfolio</p><h2>Four projects. Different challenges.</h2></div><a href="#projects" class="circle-link" aria-label="Explore the four projects">↘</a></div>
+          </aside>
+        </section>
+
+        <section id="skills" class="content-section" aria-labelledby="skills-title">
+          <div class="section-heading skills-heading"><div><p class="section-label">01 / My toolkit</p><h2 id="skills-title">Technical skills<span class="heading-dot">.</span></h2></div><p>The languages, frameworks, and tools I use<br class="desktop-break" /> across development and database work.</p></div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3><svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></svg><span>Programming Languages</span></h3>
+              <ul class="skill-tags"><li>JavaScript</li><li>PHP</li><li>Java</li><li>C</li><li>C#</li><li>Kotlin</li></ul>
+            </article>
+            <article class="skill-card">
+              <h3><svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01m-1 6-3 2.5 3 2.5m6-5 3 2.5-3 2.5"/></svg><span>Web Technologies &amp; Frameworks</span></h3>
+              <ul class="skill-tags"><li>HTML</li><li>CSS</li><li>ReactJS</li><li>ASP.NET</li></ul>
+            </article>
+            <article class="skill-card">
+              <h3><svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg><span>Databases</span></h3>
+              <ul class="skill-tags"><li>MySQL</li><li>MongoDB</li><li>PostgreSQL</li></ul>
+            </article>
+            <article class="skill-card">
+              <h3><svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M7 10h6m-3-3v6"/></svg><span>Querying &amp; Database Tools</span></h3>
+              <ul class="skill-tags"><li>LINQ</li><li>pgAdmin</li></ul>
+            </article>
+            <article class="skill-card">
+              <h3><svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4M6 7l3 3-3 3m6 0h5"/></svg><span>IDEs &amp; Editors</span></h3>
+              <ul class="skill-tags"><li>NetBeans</li><li>Visual Studio 2022</li><li>Visual Studio Code</li><li>Android Studio</li></ul>
+            </article>
+            <article class="skill-card">
+              <h3><svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6a5 5 0 0 0-6 6L3 17a2.8 2.8 0 0 0 4 4l5-5a5 5 0 0 0 6-6l-3 3-4-4 3-3Z"/></svg><span>Development &amp; Automation Tools</span></h3>
+              <ul class="skill-tags"><li>GitHub</li><li>Codex</li><li>Macro</li></ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="content-section" aria-labelledby="experience-title">
+          <div class="section-heading experience-heading"><div><p class="section-label">02 / Along the way</p><h2 id="experience-title">Professional experience<span class="heading-dot">.</span></h2></div><p>My work across software development, systems,<br class="desktop-break" /> and application testing.</p></div>
+          <div class="experience-stack">
+            <article class="experience-card">
+              <div class="experience-card-header">
+                <div class="experience-role"><h3><svg class="experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M8 7v14m8-14v14"/></svg><span>Software Engineer</span></h3><p class="experience-company">Venturestar Group Sdn Bhd</p></div>
+                <div class="experience-meta"><p><svg class="experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg><span><time datetime="2023-10">Oct 2023</time> – Present</span></p></div>
+              </div>
+              <p class="experience-description">Develop responsive H5/web frontend interfaces and integrate them with backend APIs. Implement and maintain backend services, functions, and APIs to support application features, and enhance existing systems based on client requirements and change requests.</p>
+              <p class="experience-note">Formerly GZIT Holding Sdn Bhd; renamed in July 2025.</p>
+              <ul class="skill-tags" aria-label="Work areas and tools"><li>H5 / Web</li><li>API Integration</li><li>Backend Services</li><li>System Maintenance</li></ul>
+            </article>
+            <article class="experience-card">
+              <div class="experience-card-header">
+                <div class="experience-role"><h3><svg class="experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M8 7v14m8-14v14"/></svg><span>Intern</span></h3><p class="experience-company">Plexus Manufacturing Sdn Bhd</p></div>
+                <div class="experience-meta"><p><svg class="experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg><span><time datetime="2023-02">Feb 2023</time> – <time datetime="2023-08">Aug 2023</time></span></p><p><svg class="experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Penang Riverside</span></p></div>
+              </div>
+              <p class="experience-description">Gathered information to support manufacturing execution system (MES) migration, organized findings into flowcharts, and presented them to the team. Observed discussions with users to understand how requirements were gathered. Developed a timesheet system in Microsoft Excel using Visual Basic for Applications (VBA) and macros.</p>
+              <ul class="skill-tags" aria-label="Work areas and tools"><li>MES Migration</li><li>Flowcharts</li><li>Microsoft Excel</li><li>VBA / Macros</li></ul>
+            </article>
+            <article class="experience-card">
+              <div class="experience-card-header">
+                <div class="experience-role"><h3><svg class="experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M8 7v14m8-14v14"/></svg><span>Intern</span></h3><p class="experience-company">UOB Kay Hian</p></div>
+                <div class="experience-meta"><p><svg class="experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg><span><time datetime="2020-04">Apr 2020</time> – <time datetime="2020-06">Jun 2020</time></span></p><p><svg class="experience-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Penang</span></p></div>
+              </div>
+              <p class="experience-description">Tested and validated company web application processes, documented issues, and compiled test cases. Wrote C# test code for company web pages using Katalon and ran the tests in Visual Studio.</p>
+              <ul class="skill-tags" aria-label="Work areas and tools"><li>Web Application Testing</li><li>Test Cases</li><li>C#</li><li>Katalon</li><li>Visual Studio</li></ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="content-section" aria-labelledby="projects-title">
+          <div class="section-heading"><div><p class="section-label">03 / Portfolio</p><h2 id="projects-title">Selected work<span class="heading-dot">.</span></h2></div><p>From financial tools and retail systems<br class="desktop-break" /> to commerce and academic exploration.</p></div>
+          <!-- Replace the draft summaries, details and preview areas with your real project content. -->
+          <div class="project-grid">
+            <article id="project-exchange" class="project-card project-card--expandable">
+              <div class="project-art exchange-art" aria-hidden="true"><span class="preview-label">PROJECT 01 / MOBILE APP</span><div class="exchange-visual"><span>USD</span><span class="exchange-arrow">⇄</span><span>MYR</span></div><span class="art-bottom">CURRENCY / EXCHANGE</span></div>
+              <div class="project-body"><p class="project-category">Finance · Full-stack development</p><h3>Currency Exchange Mobile App</h3><p class="project-summary">View live rates, convert currencies, and submit exchange requests in one app. Built from scratch across the frontend and backend.</p><ul class="tags" aria-label="Technologies"><li>ReactJS</li><li>C#</li><li>MySQL</li></ul><button class="project-open" type="button" data-project-open="exchange-details" aria-haspopup="dialog" aria-controls="exchange-details">Explore project <span aria-hidden="true">↗</span></button></div>
+            </article>
+            <article id="project-pos" class="project-card project-card--expandable">
+              <div class="project-art pos-art" aria-hidden="true"><span class="preview-label">PROJECT 02 / WEB · APP · DESKTOP</span><div class="pos-visual"><div class="pos-stock"><span></span><span></span><span></span></div><span class="pos-arrow">→</span><div class="pos-terminal"><span></span><i></i></div></div><span class="art-bottom">STOCK / STORE / SALES</span></div>
+              <div class="project-body"><p class="project-category">Inventory &amp; Point of Sale · Full-stack development</p><h3>POS System</h3><p class="project-summary">A multi-role system connecting warehouse stock, store operations, and sales. Available on the web, as an app, and on Windows.</p><ul class="tags" aria-label="Technologies"><li>ReactJS</li><li>C#</li><li>pgAdmin</li><li>Capacitor</li><li>Electron</li></ul><button class="project-open" type="button" data-project-open="pos-details" aria-haspopup="dialog" aria-controls="pos-details">Explore project <span aria-hidden="true">↗</span></button></div>
+            </article>
+            <article id="project-mall" class="project-card project-card--expandable">
+              <div class="project-art mall-art" aria-hidden="true"><span class="preview-label">PROJECT 03 / APP · WEB · PORTAL</span><div class="mall-visual"><span></span><span></span><span></span><span></span></div><span class="art-bottom">SHOP / SELL / MANAGE</span></div>
+              <div class="project-body"><p class="project-category">E-commerce · Full-stack development</p><h3>E-Commerce Marketplace App &amp; Admin Portal</h3><p class="project-summary">A mobile and web marketplace for shopping, selling, and rewards, with a dedicated web portal for admin and merchant operations.</p><ul class="tags" aria-label="Technologies"><li>ReactJS</li><li>C#</li><li>pgAdmin</li></ul><button class="project-open" type="button" data-project-open="marketplace-details" aria-haspopup="dialog" aria-controls="marketplace-details">Explore project <span aria-hidden="true">↗</span></button></div>
+            </article>
+            <article id="project-masters" class="project-card">
+              <div class="project-art research-art" aria-hidden="true"><span class="preview-label">PROJECT 04 / PREVIEW</span><div class="research-visual"><span></span><span></span><span></span><span></span><span></span></div><span class="art-bottom">QUESTION / EXPLORE / BUILD</span></div>
+              <div class="project-body"><p class="project-category">Academic project</p><h3>Master's app</h3><p class="project-summary">An app developed for my master's project. Space for the research question, app concept, and key findings.</p><ul class="tags" aria-label="Project themes"><li>Research</li><li>Application</li></ul><details><summary>Project details <span aria-hidden="true">+</span></summary><dl><dt>Overview</dt><dd>Add the research topic and the purpose of the app.</dd><dt>My contribution</dt><dd>Add your approach, implementation, and outcomes.</dd><dt>Built with</dt><dd>Add the technologies, screenshots, and project links.</dd></dl></details></div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-title"><div><p class="section-label">04 / Get in touch</p><h2 id="contact-title">Let's start a<br />conversation<span class="heading-dot">.</span></h2><p>About a project, an idea, or something we have in common.</p></div><div class="contact-placeholder"><span class="eyebrow">Contact details coming soon</span><p>Your email and social links will live here.</p><span class="contact-symbol" aria-hidden="true">↗</span></div></section>
+      </main>
+      <footer class="frame-footer"><p>Your name / Personal website &amp; portfolio</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
+    </div>
+  </div>
+  <dialog id="exchange-details" class="project-dialog" aria-labelledby="exchange-dialog-title">
+    <div class="project-dialog-bar">
+      <p class="eyebrow">Portfolio / Project 01</p>
+      <button class="button project-close" type="button" data-project-close autofocus><span aria-hidden="true">×</span> Close project</button>
+    </div>
+    <div class="project-dialog-content">
+      <header class="project-intro">
+        <p class="section-label">Finance / Mobile application</p>
+        <h2 id="exchange-dialog-title">Currency Exchange<br />Mobile App<span class="heading-dot">.</span></h2>
+        <p class="project-lead">Live rates. Simple conversions.<br />Exchange requests in one place.</p>
+        <p class="project-overview">A currency exchange app that helps users view real-time exchange rates across multiple countries, convert amounts between currencies, and submit exchange requests.</p>
+        <dl class="project-facts">
+          <div><dt>My role</dt><dd>Full-stack developer</dd></div>
+          <div><dt>Scope</dt><dd>Built from scratch</dd></div>
+          <div><dt>Technology</dt><dd>ReactJS · C# · MySQL</dd></div>
+        </dl>
+      </header>
+
+      <section class="project-detail-section" aria-labelledby="exchange-features-title">
+        <div class="section-heading"><div><p class="section-label">01 / The experience</p><h3 id="exchange-features-title">What the app does<span class="heading-dot">.</span></h3></div></div>
+        <div class="project-feature-grid">
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">01</span><h4>Live exchange rates</h4><p>View up-to-date rates for currencies across different countries.</p></article>
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">02</span><h4>Currency conversion</h4><p>Choose currencies and enter an amount to see its converted value.</p></article>
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">03</span><h4>Exchange requests</h4><p>Submit a currency exchange request through the app's request flow.</p></article>
+        </div>
+      </section>
+
+      <section class="project-detail-section" aria-labelledby="exchange-role-title">
+        <div class="section-heading"><div><p class="section-label">02 / My contribution</p><h3 id="exchange-role-title">Built end to end<span class="heading-dot">.</span></h3></div></div>
+        <p class="project-detail-copy">I built the app from scratch and handled all frontend and backend development, connecting the user-facing experience with the services and data behind it.</p>
+        <dl class="project-stack-list"><div><dt>ReactJS</dt><dd>Frontend interfaces and user interactions.</dd></div><div><dt>C#</dt><dd>Backend services and application logic.</dd></div><div><dt>MySQL</dt><dd>Application data storage and management.</dd></div></dl>
+      </section>
+
+      <section class="project-detail-section" aria-labelledby="exchange-screens-title">
+        <div class="section-heading"><div><p class="section-label">03 / A closer look</p><h3 id="exchange-screens-title">Inside the app<span class="heading-dot">.</span></h3></div><p>Select a screen to view it full size.</p></div>
+        <div class="project-screenshots project-screenshots--exchange">
+          <figure><a href="projects/CurrencyExchangeApp/03_Homescreen.png" target="_blank" rel="noopener" aria-label="View Dashboard screenshot full size (opens in a new tab)"><img src="projects/CurrencyExchangeApp/03_Homescreen.png" alt="Currency exchange dashboard showing daily sales, profit, transaction totals, and records by currency." width="828" height="1454" loading="lazy" decoding="async" /></a><figcaption>Dashboard</figcaption></figure>
+          <figure><a href="projects/CurrencyExchangeApp/29_Transaction_Details.png" target="_blank" rel="noopener" aria-label="View Transaction details screenshot full size (opens in a new tab)"><img src="projects/CurrencyExchangeApp/29_Transaction_Details.png" alt="Approved exchange transaction showing the converted amount, service charge, total, and transaction details." width="827" height="1470" loading="lazy" decoding="async" /></a><figcaption>Transaction details</figcaption></figure>
+          <figure><a href="projects/CurrencyExchangeApp/48_Currency_Empty_2.png" target="_blank" rel="noopener" aria-label="View Currency rates &amp; conversion screenshot full size (opens in a new tab)"><img src="projects/CurrencyExchangeApp/48_Currency_Empty_2.png" alt="Currency screen showing MYR conversions to IDR, INR, and USD, with an exchange rate chart." width="828" height="1845" loading="lazy" decoding="async" /></a><figcaption>Currency rates &amp; conversion</figcaption></figure>
+        </div>
+      </section>
+      <footer class="project-dialog-footer"><p>Currency Exchange Mobile App / Full-stack development</p><button class="button" type="button" data-project-close>Back to projects <span aria-hidden="true">↙</span></button></footer>
+    </div>
+  </dialog>
+
+  <dialog id="pos-details" class="project-dialog" aria-labelledby="pos-dialog-title">
+    <div class="project-dialog-bar"><p class="eyebrow">Portfolio / Project 02</p><button class="button project-close" type="button" data-project-close autofocus><span aria-hidden="true">×</span> Close project</button></div>
+    <div class="project-dialog-content">
+      <header class="project-intro">
+        <p class="section-label">Retail / Inventory &amp; point of sale</p>
+        <h2 id="pos-dialog-title">POS System<span class="heading-dot">.</span></h2>
+        <p class="project-lead">From warehouse to store to sales.<br />One system. Multiple roles.</p>
+        <p class="project-overview">A multi-role inventory and point-of-sale system that tracks stock across warehouse, store, and sales operations. It supports restocking, salesman stock checkout and returns, cashier checkout, returns and refunds, and merchant reporting.</p>
+        <p class="project-overview">A mobile app for salesmen and a Windows desktop app for cashiers, connected to the same backend and inventory data.</p>
+        <ul class="skill-tags project-platforms" aria-label="Available platforms"><li>Web</li><li>App · Capacitor</li><li>Windows · Electron</li></ul>
+        <dl class="project-facts"><div><dt>My role</dt><dd>Full-stack developer</dd></div><div><dt>Scope</dt><dd>Team development &amp; maintenance</dd></div><div><dt>Technology</dt><dd>ReactJS · C# · pgAdmin</dd></div></dl>
+      </header>
+      <section class="project-detail-section" aria-labelledby="pos-roles-title">
+        <div class="section-heading"><div><p class="section-label">01 / People &amp; responsibilities</p><h3 id="pos-roles-title">Five roles, one connected workflow<span class="heading-dot">.</span></h3></div></div>
+        <p class="project-detail-copy">Each role supports a different part of the stock and sales lifecycle, from receiving inventory to completing a sale and reviewing reports.</p>
+        <ol class="project-role-list">
+          <li><span class="role-number" aria-hidden="true">01</span><h4>Merchant</h4><p>Oversees the business and reviews sales and inventory reports.</p></li>
+          <li><span class="role-number" aria-hidden="true">02</span><h4>Warehouse &amp; stockkeeper</h4><p>Manages warehouse restocking and stock transfers to salesmen or stores.</p></li>
+          <li><span class="role-number" aria-hidden="true">03</span><h4>Store</h4><p>Holds stock and supports daily store operations.</p></li>
+          <li><span class="role-number" aria-hidden="true">04</span><h4>Salesman</h4><p>Processes sales from their own assigned stock and returns unsold items.</p></li>
+          <li><span class="role-number" aria-hidden="true">05</span><h4>Cashier</h4><p>Handles checkout from store stock, customer returns, and refunds.</p></li>
+        </ol>
+      </section>
+      <section class="project-detail-section" aria-labelledby="pos-features-title">
+        <div class="section-heading"><div><p class="section-label">02 / The experience</p><h3 id="pos-features-title">What the system does<span class="heading-dot">.</span></h3></div></div>
+        <div class="project-feature-grid">
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">01</span><h4>Warehouse restocking &amp; stock transfer</h4><p>Restock the warehouse, then transfer stock to salesmen or stores.</p></article>
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">02</span><h4>Salesman stock checkout &amp; return</h4><p>Support salesman checkout from their assigned stock and track unsold items returned.</p></article>
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">03</span><h4>Cashier checkout, returns &amp; refunds</h4><p>Support checkout from store stock and handle customer returns and refunds.</p></article>
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">04</span><h4>Real-time stock tracking</h4><p>Keep stock levels visible as inventory moves through the business.</p></article>
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">05</span><h4>Sales &amp; inventory reports</h4><p>Give merchants a view of sales activity and inventory for business oversight.</p></article>
+        </div>
+      </section>
+      <section class="project-detail-section" aria-labelledby="pos-contribution-title">
+        <div class="section-heading"><div><p class="section-label">03 / My contribution</p><h3 id="pos-contribution-title">Develop, improve, maintain<span class="heading-dot">.</span></h3></div></div>
+        <p class="project-detail-copy">I work with the team on frontend and backend development, gather feedback, and improve the system based on project requirements. My work includes implementing new features, refining existing functionality, and maintaining the web application.</p>
+        <dl class="project-stack-list"><div><dt>ReactJS</dt><dd>Frontend interfaces and user interactions.</dd></div><div><dt>C#</dt><dd>Backend services and application logic.</dd></div><div><dt>pgAdmin</dt><dd>Database administration and management.</dd></div><div><dt>Capacitor</dt><dd>App delivery.</dd></div><div><dt>Electron</dt><dd>Windows desktop delivery.</dd></div></dl>
+      </section>
+      <section class="project-detail-section" aria-labelledby="pos-flow-title">
+        <div class="section-heading"><div><p class="section-label">04 / How it connects</p><h3 id="pos-flow-title">The stock &amp; sales flow<span class="heading-dot">.</span></h3></div></div>
+        <div class="pos-flow" role="group" aria-label="Stock workflow: warehouse restocking, transfer to salesman or store stock, checkout from each stock, returns or refunds, and reports.">
+          <div class="pos-flow-heading"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Warehouse restocking. Two stock destinations.</p></div>
+          <div class="pos-flow-supply" role="group" aria-label="Warehouse restocking and transfer">
+            <div class="pos-flow-node"><span class="flow-node-top"><span class="flow-step">01</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V8l9-5 9 5v13M3 9h18M7 21V12h10v9M7 16h10M7 20h10"/></svg></span><strong>Warehouse restock</strong><span class="flow-node-caption">Receive and replenish warehouse stock</span></div>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <div class="pos-flow-node"><span class="flow-node-top"><span class="flow-step">02</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h12v12H3zM15 10h4l3 4v4h-7M6 3h6M7 10h4m-2-2v4"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg></span><strong>Stock transfer</strong><span class="flow-node-caption">Transfer warehouse stock to salesman or store</span></div>
+          </div>
+          <div class="flow-split" aria-hidden="true"><span>Two stock destinations</span></div>
+          <div class="pos-flow-lanes">
+            <div class="pos-flow-lane" role="group" aria-label="Salesman stock and checkout"><p class="flow-lane-label">Salesman path</p>
+              <div class="pos-flow-node"><span class="flow-node-top"><span class="flow-step">03A</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M5 21v-4a7 7 0 0 1 14 0v4M8 18h8m-4-3v6"/></svg></span><strong>Salesman stock</strong><span class="flow-node-caption">Stock transferred to the salesman</span></div>
+              <span class="flow-down" aria-hidden="true">↓</span>
+              <div class="pos-flow-node"><span class="flow-node-top"><span class="flow-step">04A</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="6" r="3"/><path d="M5 21v-4a7 7 0 0 1 14 0v4M8 18h8m-4-3v6"/></svg></span><strong>Salesman checkout</strong><span class="flow-node-caption">Sell from their own assigned stock</span></div>
+              <span class="flow-down" aria-hidden="true">↓</span>
+              <div class="pos-flow-node"><span class="flow-node-top"><span class="flow-step">05A</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 5 3 10l5 5M3 10h11a7 7 0 0 1 0 14" transform="translate(0 -3)"/></svg></span><strong>Return</strong><span class="flow-node-caption">Return unsold stock</span></div>
+            </div>
+            <div class="pos-flow-lane" role="group" aria-label="Store stock and cashier checkout"><p class="flow-lane-label">Store path</p>
+              <div class="pos-flow-node"><span class="flow-node-top"><span class="flow-step">03B</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v11h16V10M2 10l3-7h14l3 7M2 10c0 4 5 4 5 0 0 4 5 4 5 0 0 4 5 4 5 0 0 4 5 4 5 0M9 21v-7h6v7"/></svg></span><strong>Store stock</strong><span class="flow-node-caption">Stock transferred to the store</span></div>
+              <span class="flow-down" aria-hidden="true">↓</span>
+              <div class="pos-flow-node"><span class="flow-node-top"><span class="flow-step">04B</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M8 21h8m-4-5v5M7 7h5m-5 4h9"/></svg></span><strong>Cashier checkout</strong><span class="flow-node-caption">Sell from the store stock</span></div>
+              <span class="flow-down" aria-hidden="true">↓</span>
+              <div class="pos-flow-node"><span class="flow-node-top"><span class="flow-step">05B</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10a9 9 0 1 1 1 9M3 4v6h6M14 7h-3a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-3m2-10v12"/></svg></span><strong>Return / Refund</strong><span class="flow-node-caption">Handle customer returns and refunds</span></div>
+            </div>
+          </div>
+          <div class="flow-merge" aria-hidden="true"><span>↓</span></div>
+          <div class="pos-flow-report"><div class="pos-flow-node"><span class="flow-node-top"><span class="flow-step">06</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3v18h17M8 17v-5m5 5V8m5 9V5"/></svg></span><strong>Reports</strong><span class="flow-node-caption">Merchant sales and inventory visibility</span></div></div>
+        </div>
+      </section>
+      <section class="project-detail-section" aria-labelledby="pos-screens-title">
+        <div class="section-heading"><div><p class="section-label">05 / A closer look</p><h3 id="pos-screens-title">Inside the system<span class="heading-dot">.</span></h3></div><p>UI screenshots will be added here.</p></div>
+        <!-- Replace these placeholders with the corresponding UI screenshots. -->
+        <div class="project-screenshots">
+          <figure><div class="screenshot-placeholder"><span aria-hidden="true">01 / WEB</span><p>Screenshot coming soon</p></div><figcaption>Web application</figcaption></figure>
+          <figure><div class="screenshot-placeholder"><span aria-hidden="true">02 / APP</span><p>Screenshot coming soon</p></div><figcaption>App · Capacitor</figcaption></figure>
+          <figure><div class="screenshot-placeholder"><span aria-hidden="true">03 / WINDOWS</span><p>Screenshot coming soon</p></div><figcaption>Windows · Electron</figcaption></figure>
+        </div>
+      </section>
+      <footer class="project-dialog-footer"><p>POS System / Full-stack development</p><button class="button" type="button" data-project-close>Back to projects <span aria-hidden="true">↙</span></button></footer>
+    </div>
+  </dialog>
+
+  <dialog id="marketplace-details" class="project-dialog" aria-labelledby="marketplace-dialog-title">
+    <div class="project-dialog-bar"><p class="eyebrow">Portfolio / Project 03</p><button class="button project-close" type="button" data-project-close autofocus><span aria-hidden="true">×</span> Close project</button></div>
+    <div class="project-dialog-content">
+      <header class="project-intro">
+        <p class="section-label">E-commerce / Marketplace &amp; back-office management</p>
+        <h2 id="marketplace-dialog-title">E-Commerce Marketplace<br />App &amp; Admin Portal<span class="heading-dot">.</span></h2>
+        <p class="project-lead">Shop, sell, and earn rewards.<br />Manage the marketplace behind it.</p>
+        <p class="project-overview">An e-commerce platform where customers discover products, shop, pay, track shipments, and review their purchases. Sellers manage products and shipments, while admins and merchants oversee marketplace operations through a dedicated web portal.</p>
+        <p class="project-overview">Customers can also earn reward points and redeem them for e-wallet vouchers or payments.</p>
+        <ul class="skill-tags project-platforms" aria-label="Available platforms"><li>Marketplace · Mobile &amp; Web</li><li>Admin &amp; Merchant Portal · Web</li></ul>
+        <dl class="project-facts"><div><dt>My role</dt><dd>Full-stack software developer</dd></div><div><dt>Scope</dt><dd>Team development &amp; maintenance</dd></div><div><dt>Technology</dt><dd>ReactJS · C# · pgAdmin</dd></div></dl>
+      </header>
+      <section class="project-detail-section" aria-labelledby="marketplace-platforms-title">
+        <div class="section-heading"><div><p class="section-label">01 / Platform overview</p><h3 id="marketplace-platforms-title">Two experiences, one marketplace<span class="heading-dot">.</span></h3></div></div>
+        <div class="project-feature-grid marketplace-platform-grid">
+          <article class="project-feature-card"><span class="feature-number">MOBILE / WEB</span><h4>Customer &amp; seller marketplace</h4><p>The shopping and selling experience: product discovery, payment, reviews, rewards, and seller tools, available on mobile and web.</p></article>
+          <article class="project-feature-card"><span class="feature-number">WEB PORTAL</span><h4>Admin &amp; merchant operations</h4><p>A web-only back office for managing users, products, orders, refunds, vouchers, and promotional banners.</p></article>
+        </div>
+      </section>
+      <section class="project-detail-section" aria-labelledby="marketplace-features-title">
+        <div class="section-heading"><div><p class="section-label">02 / People &amp; features</p><h3 id="marketplace-features-title">Built for every side of the marketplace<span class="heading-dot">.</span></h3></div></div>
+        <div class="project-feature-grid">
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">01 / SHOP</span><h4>Customer</h4><p>From finding a product to reviewing a purchase.</p><ul class="marketplace-feature-list"><li>Browse categories and search for products</li><li>Add items to cart, check out, and pay</li><li>Track shipping progress</li><li>Rate and review purchases</li><li>Earn reward points and redeem them for e-wallet vouchers or payments</li></ul></article>
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">02 / SELL</span><h4>Seller</h4><p>Tools to take products from listing to shipment.</p><ul class="marketplace-feature-list"><li>Upload products</li><li>Handle incoming orders</li><li>Arrange shipments</li></ul></article>
+          <article class="project-feature-card"><span class="feature-number" aria-hidden="true">03 / MANAGE</span><h4>Admin &amp; merchant</h4><p>Back-office controls for daily marketplace operations.</p><ul class="marketplace-feature-list"><li>Manage users and downlines</li><li>Manage products and categories</li><li>Oversee orders and refunds</li><li>Manage vouchers</li><li>Manage promotional banners</li></ul></article>
+        </div>
+      </section>
+      <section class="project-detail-section" aria-labelledby="marketplace-role-title">
+        <div class="section-heading"><div><p class="section-label">03 / My contribution</p><h3 id="marketplace-role-title">Develop, refine, maintain<span class="heading-dot">.</span></h3></div></div>
+        <p class="project-detail-copy">I work with the team as a full-stack software developer across the marketplace and admin portal. My work includes frontend and backend development, gathering feedback, adding and improving features based on requirements, and maintaining the web applications.</p>
+        <dl class="project-stack-list"><div><dt>ReactJS</dt><dd>Marketplace and portal interfaces and user interactions.</dd></div><div><dt>C#</dt><dd>Backend services and application logic.</dd></div><div><dt>pgAdmin</dt><dd>Database administration and management.</dd></div></dl>
+      </section>
+      <section class="project-detail-section" aria-labelledby="marketplace-screens-title">
+        <div class="section-heading"><div><p class="section-label">04 / A closer look</p><h3 id="marketplace-screens-title">Inside the marketplace<span class="heading-dot">.</span></h3></div><p>UI screenshots will be added here.</p></div>
+        <!-- Replace the placeholders with approved marketplace and portal screenshots. -->
+        <div class="project-screenshots">
+          <figure><div class="screenshot-placeholder"><span aria-hidden="true">01 / MOBILE</span><p>Screenshot coming soon</p></div><figcaption>Marketplace mobile app</figcaption></figure>
+          <figure><div class="screenshot-placeholder"><span aria-hidden="true">02 / WEB</span><p>Screenshot coming soon</p></div><figcaption>Marketplace web app</figcaption></figure>
+          <figure><div class="screenshot-placeholder"><span aria-hidden="true">03 / PORTAL</span><p>Screenshot coming soon</p></div><figcaption>Admin &amp; merchant portal</figcaption></figure>
+        </div>
+      </section>
+      <footer class="project-dialog-footer"><p>E-Commerce Marketplace / Full-stack development</p><button class="button" type="button" data-project-close>Back to projects <span aria-hidden="true">↙</span></button></footer>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
