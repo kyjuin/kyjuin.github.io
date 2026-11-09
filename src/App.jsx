@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import CurrencyExchangeProject from './components/CurrencyExchangeProject';
 import PosProject from './components/PosProject';
 import MarketplaceProject from './components/MarketplaceProject';
+import ResearchProject from './components/ResearchProject';
 
 export default function App() {
   const [activeProject, setActiveProject] = useState(null);
@@ -51,6 +52,7 @@ export default function App() {
       <CurrencyExchangeProject active={activeProject === 'exchange-details'} {...dialogProps} />
       <PosProject active={activeProject === 'pos-details'} {...dialogProps} />
       <MarketplaceProject active={activeProject === 'marketplace-details'} {...dialogProps} />
+      <ResearchProject active={activeProject === 'research-details'} {...dialogProps} />
     </>
   );
 }
