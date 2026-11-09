@@ -64,7 +64,7 @@ export default function Contact() {
           email: values.email,
           subject: values.subject,
           message: values.message,
-          from_name: 'Keong Yi Juin — Portfolio',
+          from_name: 'Web Portfolio',
           'h-captcha-response': captchaToken,
         }),
       });
