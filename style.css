@@ -341,8 +341,11 @@ details dd { margin: 5px 0 0; font-size: 12px; line-height: 1.7; color: var(--mu
   .skills-grid { grid-template-columns: 1fr; }
   .section-heading.skills-heading { align-items: center; gap: 16px; }
   .page-shell { padding: 12px; }.portfolio-frame { padding: 0 22px; border-radius: 24px; }
-  .frame-header { flex-wrap: wrap; padding: 22px 0 18px; gap: 20px 14px; }.frame-brand { margin-right: auto; }
-  .frame-nav { order: 3; width: 100%; justify-content: space-between; font-size: 11px; border-top: 1px solid #ffffff0d; padding-top: 10px; }
+  .frame-header { flex-wrap: wrap; padding: 22px 0 12px; gap: 20px 14px; border-bottom: 0; }.frame-brand { margin-right: auto; }
+  .frame-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); order: 3; width: 100%; gap: 6px; padding: 6px; border: 1px solid var(--border); border-radius: 18px; background: var(--surface-soft); }
+  .frame-nav a { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 6px; border: 1px solid transparent; border-radius: 12px; color: var(--text); font-size: 11px; line-height: 1.5; text-align: center; }
+  .frame-nav a:hover, .frame-nav a:focus-visible { background: var(--surface-soft); border-color: var(--border); }
+  .frame-nav a:focus-visible { outline-offset: 2px; border-radius: 12px; }
   .header-contact { font-size: 10px; gap: 10px; }.brand-copy { font-size: 11px; }
   .hero-row { grid-template-columns: 1fr; gap: 30px; padding: 40px 0; }.hero-copy h1 { font-size: clamp(44px, 11.5vw, 76px); }
   .hero-text { font-size: 14px; }.hero-feature { transform: none; }.feature-art { height: 215px; }
@@ -426,8 +429,13 @@ details dd { margin: 5px 0 0; font-size: 12px; line-height: 1.7; color: var(--mu
 :root[data-theme="light"] .frame-nav { border-top-color: #263e2914; }
 :root[data-theme="light"] ::selection { background: #007a9e30; color: #162a22; }
 @media (max-width: 380px) {
-  .frame-nav { gap: 10px; font-size: 10px; }
+  .frame-nav { gap: 6px; }
   .theme-toggle { padding: 8px; gap: 5px; font-size: 9px; }
+}
+
+@media (max-width: 480px) {
+  .frame-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 8px; }
+  .frame-nav a { font-size: 12px; background: var(--surface-soft); }
 }
 
 /* Full-screen project view uses the same surfaces, typography, and theme colors. */
