@@ -1,44 +1,112 @@
-# Keong Yi Juin — React portfolio
+# Keong Yi Juin — Portfolio
 
-The portfolio uses React and Vite. Its existing CSS, section order, project content, and light/dark design are retained.
+My personal portfolio showcasing my skills, professional experience, and selected projects across web, mobile, and desktop applications.
+
+I’m a full-stack developer with 3+ years of experience. This website brings together the systems I’ve worked on, my contributions, and the thinking behind each project.
+
+## Website features
+
+- Responsive layouts for desktop, tablet, and mobile.
+- Light and dark modes with a saved theme preference.
+- Four main sections: **Skills, Experience, Projects, and Contact**.
+- Full-screen project case studies covering the overview, role, features, technologies, and available UI previews.
+- Contact form integrated with Web3Forms and hCaptcha, with submission feedback and error handling.
+- Quick links to GitHub, LinkedIn, and email.
+
+## Featured projects
+
+### 01 · Currency Exchange Mobile App
+
+A currency exchange application for viewing live exchange rates, converting currencies, and submitting exchange requests.
+
+- **My contribution:** Built the frontend and backend from scratch.
+- **Technologies:** ReactJS, C#, MySQL.
+- **Portfolio content:** Feature overview and three application screenshots.
+
+### 02 · POS System
+
+A multi-role inventory and point-of-sale system covering warehouse restocking, stock transfers, sales, returns, refunds, and reporting. The web system, salesmen’s mobile app, and cashiers’ Windows app share the same backend and inventory data.
+
+- **My contribution:** Collaborated with the team on full-stack development, requirement changes, feature improvements, and web maintenance.
+- **Technologies:** ReactJS, C#, SQL database tooling with pgAdmin, Capacitor, Electron.
+- **Portfolio content:** User roles, platform overview, and a stock-to-sales workflow diagram.
+
+### 03 · E-Commerce Marketplace App & Admin Portal
+
+A marketplace supporting customer shopping, seller operations, and administrative management through mobile and web interfaces. Features include checkout, shipment tracking, reviews, reward points, and back-office tools.
+
+- **My contribution:** Worked with the team on full-stack development and improvements based on requirements and feedback.
+- **Technologies:** ReactJS, C#, SQL database tooling with pgAdmin.
+- **Portfolio content:** Platform overview and features grouped by customer, seller, and admin/merchant roles.
+
+### 04 · Depression Detection & Care Monitoring Research Project
+
+A research project connecting three applications: a caretaker mobile app, a medical officer monitoring app, and a depression detection admin panel.
+
+- **My contribution:** Gathered requirements from HUSM, developed three prototypes, planned the database schema and technology approach, and assigned and guided an intern’s development work.
+- **Implementation credit:** Application code was developed by the intern.
+- **Technologies:** ReactJS and Vite for the web interfaces, React Native and Expo for the caretaker app, and C# with SQL database tooling through pgAdmin for the backend. Power BI integration is planned.
+- **Portfolio content:** Three app summaries, contribution details, and links to the Figma prototypes.
+
+## Portfolio technology stack
+
+| Area | Technology |
+| --- | --- |
+| User interface | React |
+| Development and production build | Vite |
+| Styling | Custom CSS with responsive layouts and theme variables |
+| Contact form | Web3Forms and hCaptcha |
+| Automated checks | Node.js test runner and jsdom |
+| Hosting and deployment | GitHub Pages and GitHub Actions |
+
+The technologies listed under each featured project describe those projects, rather than the portfolio website itself.
 
 ## Run locally
 
-Use Node.js 20 or 22, then run:
+Use **Node.js 22** to match the deployment workflow.
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
-Open the local address printed in the terminal. Opening `index.html` directly no longer runs the website.
+Open the local URL printed in the terminal. The React application must run through Vite; opening `index.html` directly will not start it.
 
-```sh
-npm test
-npm run build
-npm run preview
+Additional commands:
+
+| Command | Purpose |
+| --- | --- |
+| `npm test` | Run the automated checks |
+| `npm run build` | Generate the production website in `dist/` |
+| `npm run preview` | Preview the production build locally after building |
+
+## Project structure
+
+```text
+.github/workflows/deploy.yml   GitHub Pages deployment workflow
+src/
+  main.jsx                    React entry point
+  App.jsx                     Main page composition
+  components/                 Page sections and project case studies
+projects/                     Project image assets
+style.css                     Shared styles, themes, and responsive layouts
+tests/                        Automated checks
+index.html                    Vite HTML entry
+vite.config.js                Vite configuration
 ```
 
-The production website is generated in `dist/` with versioned assets to avoid mixing old styles with new pages.
+## Update the content
 
-## Edit content
+Some project galleries are placeholders awaiting screenshots. Only include images approved for public sharing.
 
-- `src/components/`: header, introduction, skills, experience, projects, contact, and footer.
-- `CurrencyExchangeProject.jsx`, `PosProject.jsx`, and `MarketplaceProject.jsx`: full-screen project details.
-- `style.css`: the shared design and responsive layouts.
-- `projects/`: original project images. Currency screenshots are imported by the React component and bundled during the build.
 
-The contact form remains paused after removing FormSubmit. Its direct email link works. The résumé button remains disabled until a résumé file is supplied.
+## Contact form
 
-## Publish on GitHub Pages
+The contact form submits to Web3Forms without leaving the portfolio page. It includes required-field validation, a hidden spam-trap field, hCaptcha verification, duplicate-submission prevention, and success/error messages. Failed submissions preserve the typed message for retrying.
 
-1. Upload the updated source to the same repository: `index.html`, `style.css`, `package.json`, `package-lock.json`, `vite.config.js`, `src/`, the referenced images under `projects/`, and `.github/workflows/deploy.yml`. Include the `tests/` folder if you want to run the checks locally. Do not upload `node_modules/`.
-2. In **Settings → Pages → Build and deployment**, change **Source** from **Deploy from a branch** to **GitHub Actions**.
-3. The included **Deploy portfolio to GitHub Pages** workflow builds and publishes on updates to `main`. It can also be started from **Actions → Deploy portfolio to GitHub Pages → Run workflow**.
-4. Wait for the deployment's green check, then use **Settings → Pages → Visit site**.
 
-The relative build paths work for both `username.github.io` and `username.github.io/repository/`. Uploading only `index.html` and `style.css` is no longer sufficient: React must be built first.
+## Connect
 
-Alternatively, after `npm run build`, publish the **contents** of `dist/` as a plain static site using your existing branch-publishing setup. Do not mix this option with uploading the React source entry page to that publishing folder.
-
-Only upload project screenshots approved for public use. This conversion does not publish anything automatically from your computer.
+- [GitHub](https://github.com/kyjuin)
+- [LinkedIn](https://www.linkedin.com/in/yi-juin-keong-356686288)
+- [Email](mailto:kyjuin26@gmail.com)
