@@ -46,9 +46,11 @@ export default function CurrencyExchangeProject({ active, onRequestClose, onClos
           <figure><a href={screenshot2} target="_blank" rel="noopener" aria-label="View Transaction details screenshot full size (opens in a new tab)"><img src={screenshot2} alt="Approved exchange transaction showing the converted amount, service charge, total, and transaction details." width="827" height="1470" loading="lazy" decoding="async" /></a><figcaption>Transaction details</figcaption></figure>
           <figure><a href={screenshot3} target="_blank" rel="noopener" aria-label="View Currency rates &amp; conversion screenshot full size (opens in a new tab)"><img src={screenshot3} alt="Currency screen showing MYR conversions to IDR, INR, and USD, with an exchange rate chart." width="828" height="1845" loading="lazy" decoding="async" /></a><figcaption>Currency rates &amp; conversion</figcaption></figure>
         </div>
-      </section>
-      <footer className="project-dialog-footer"><p>Currency Exchange Mobile App / Full-stack development</p><button className="button" type="button" onClick={onRequestClose}>Back to projects <span aria-hidden="true">↙</span></button></footer>
-    </div>
+        </section>
+        <footer className="project-dialog-footer"><p>Currency Exchange Mobile App / Full-stack development</p>
+          {/* <button className="button" type="button" onClick={onRequestClose}>Back to projects <span aria-hidden="true">↙</span></button> */}
+        </footer>
+      </div>
   
     </ProjectDialog>
   );

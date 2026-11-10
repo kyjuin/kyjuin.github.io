@@ -43,10 +43,12 @@ export default function MarketplaceProject({ active, onRequestClose, onClosed })
           <figure><div className="screenshot-placeholder"><span aria-hidden="true">02 / WEB</span><p>Screenshot coming soon</p></div><figcaption>Marketplace web app</figcaption></figure>
           <figure><div className="screenshot-placeholder"><span aria-hidden="true">03 / PORTAL</span><p>Screenshot coming soon</p></div><figcaption>Admin &amp; merchant portal</figcaption></figure>
         </div>
-      </section>
-      <footer className="project-dialog-footer"><p>E-Commerce Marketplace / Full-stack development</p><button className="button" type="button" onClick={onRequestClose}>Back to projects <span aria-hidden="true">↙</span></button></footer>
-    </div>
-  
+        </section>
+        <footer className="project-dialog-footer"><p>E-Commerce Marketplace / Full-stack development</p>
+          {/* <button className="button" type="button" onClick={onRequestClose}>Back to projects <span aria-hidden="true">↙</span></button> */}
+        </footer>
+      </div>
+
     </ProjectDialog>
   );
 }

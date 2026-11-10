@@ -79,10 +79,12 @@ export default function PosProject({ active, onRequestClose, onClosed }) {
           <figure><div className="screenshot-placeholder"><span aria-hidden="true">02 / APP</span><p>Screenshot coming soon</p></div><figcaption>App · Capacitor</figcaption></figure>
           <figure><div className="screenshot-placeholder"><span aria-hidden="true">03 / WINDOWS</span><p>Screenshot coming soon</p></div><figcaption>Windows · Electron</figcaption></figure>
         </div>
-      </section>
-      <footer className="project-dialog-footer"><p>POS System / Full-stack development</p><button className="button" type="button" onClick={onRequestClose}>Back to projects <span aria-hidden="true">↙</span></button></footer>
-    </div>
-  
+        </section>
+        <footer className="project-dialog-footer"><p>POS System / Full-stack development</p>
+          {/* <button className="button" type="button" onClick={onRequestClose}>Back to projects <span aria-hidden="true">↙</span></button> */}
+        </footer>
+      </div>
+
     </ProjectDialog>
   );
 }
