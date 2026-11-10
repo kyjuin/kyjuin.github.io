@@ -1,4 +1,8 @@
 import ProjectDialog from './ProjectDialog';
+import warehouseRestock from '../../projects/POS/WarehouseRestock.png';
+import stockManagement from '../../projects/POS/StockManagement.png';
+import salesmanCheckout from '../../projects/POS/SalesmanCheckout.png';
+import salesReport from '../../projects/POS/Report.png';
 
 export default function PosProject({ active, onRequestClose, onClosed }) {
   return (
@@ -72,12 +76,13 @@ export default function PosProject({ active, onRequestClose, onClosed }) {
         </div>
       </section>
       <section className="project-detail-section" aria-labelledby="pos-screens-title">
-        <div className="section-heading"><div><p className="section-label">05 / A closer look</p><h3 id="pos-screens-title">Inside the system<span className="heading-dot">.</span></h3></div><p>UI screenshots will be added here.</p></div>
+        <div className="section-heading"><div><p className="section-label">05 / A closer look</p><h3 id="pos-screens-title">Inside the system<span className="heading-dot">.</span></h3></div><p>Select a screen to view it full size.</p></div>
         
-        <div className="project-screenshots">
-          <figure><div className="screenshot-placeholder"><span aria-hidden="true">01 / WEB</span><p>Screenshot coming soon</p></div><figcaption>Web application</figcaption></figure>
-          <figure><div className="screenshot-placeholder"><span aria-hidden="true">02 / APP</span><p>Screenshot coming soon</p></div><figcaption>App · Capacitor</figcaption></figure>
-          <figure><div className="screenshot-placeholder"><span aria-hidden="true">03 / WINDOWS</span><p>Screenshot coming soon</p></div><figcaption>Windows · Electron</figcaption></figure>
+        <div className="project-screenshots project-screenshots--pos">
+          <figure><a href={warehouseRestock} aria-label="View Warehouse restock screenshot full size in a preview"><img src={warehouseRestock} alt="Warehouse restocking form with supplier details, product quantities, unit costs, and total amount." width="1910" height="937" loading="lazy" decoding="async" /></a><figcaption>Warehouse restock</figcaption></figure>
+          <figure><a href={stockManagement} aria-label="View Salesman stock management screenshot full size in a preview"><img src={stockManagement} alt="Salesman stock price management showing products, units, quantities, and selling prices." width="1910" height="937" loading="lazy" decoding="async" /></a><figcaption>Salesman stock management</figcaption></figure>
+          <figure><a href={salesmanCheckout} aria-label="View Salesman checkout screenshot full size in a preview"><img src={salesmanCheckout} alt="Salesman checkout with customer selection, product search, and quantity controls for different product units." width="1912" height="937" loading="lazy" decoding="async" /></a><figcaption>Salesman checkout</figcaption></figure>
+          <figure><a href={salesReport} aria-label="View Sales report screenshot full size in a preview"><img src={salesReport} alt="Top sales report with month, merchant, salesman, and store filters and a sales summary table." width="1912" height="932" loading="lazy" decoding="async" /></a><figcaption>Sales report</figcaption></figure>
         </div>
         </section>
         <footer className="project-dialog-footer"><p>POS System / Full-stack development</p>
